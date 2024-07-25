@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -9,81 +10,102 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ffffff;
+    line-height: 1.6;
 }
 
 /* Barra superior */
 .top-bar {
-    border-radius: 2rem;
-    background-color: #000000c0;
-    padding: 1rem 2rem;
+    background-color: #0ffadb;
+    padding: 1rem 0;
+    color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .top-bar .container {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.top-bar .brand h1 a{
-    color: #0de62a;
+.logo {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.brand h1 a {
+    color: #fff;
     text-decoration: none;
-    padding-left: 10rem;
     font-size: 2rem;
-    margin: 0;
 }
 
-.top-bar .navigation ul {
+.navigation ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    padding-right: 10rem;
-    font-size: 2rem;
 }
 
-.top-bar .navigation ul li {
-    margin-right: 5rem;
+.navigation ul li {
+    margin-right: 2rem;
 }
 
-.top-bar .navigation ul li a {
+.navigation ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+    font-size: 2rem;
+    transition: color 0.3s;
 }
 
-.top-bar .navigation ul li :hover{
-    color: rgb(0, 255, 55);
-    transition: 0.1s;
+.navigation ul li a:hover {
+    color: #09ff00;
 }
+
+.contact-info {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.btn-central {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 2rem;
+}
+
+.btn-central:hover {
+    background-color: #b9fc01;
+}
+
 /* Seção hero */
 .hero {
-    padding: 5rem;
+    padding: 5rem 2rem;
     background-color: #ffffff;
 }
 
 .hero .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: center;
 }
 
 .hero-content {
-    margin-right: 10rem;
-    margin-left: 15rem;
-    max-width: 100%;
+    text-align: center;
 }
 
 .hero-content h2 {
     font-family: 'Montserrat', sans-serif;
     color: #003366;
-    font-size: 8rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
 }
 
@@ -93,32 +115,23 @@ body {
 
 .hero-content p {
     color: #333333;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-bottom: 4rem;
-}
-.hero-content .hero-content-bg{
-    padding-top: 30rem;
-    padding-left: 10rem;
-    height: 60rem;
-    width: 60rem;
-    text-align: center;
 }
 
 .hero-content .btn {
     background: linear-gradient(90deg, #2EB4FF, #A42F99, #991B2A);
     color: #fff;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 0.5rem;
     border: none;
     transition: background 0.3s;
     font-weight: bold;
-    height: 5rem;
-    width: 10rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.70rem;
+    font-size: 1.7rem;
 }
 
 .hero-content .btn:hover {
@@ -132,62 +145,103 @@ body {
 
 /* Seção about */
 .about {
-    padding: 35rem;
+    padding: 5rem 2rem;
     background-color: #ffffff;
 }
 
 .about .container {
-    max-width: auto;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
 .about h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10rem;
+    font-size: 4rem;
     color: #003366;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 
 .about p {
     text-align: justify;
-    font-size: 4rem;
+    font-size: 2rem;
     color: #333333;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 20rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .about-item {
-    padding-top: 2rem;
-    font-style: italic;
+    padding: 2rem;
     background-color: rgba(255, 174, 0, 0.644);
-    width: 28rem;
-    height: 40rem; /* Aumentando a altura das colunas */
     border-radius: 10%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: rgb(37, 4, 224);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.about-item img{
-    padding-top: 10rem;
+
+.about-item img {
     width: 6rem;
     height: 6rem;
-    max-width: 100%;
-    max-height: 100%;
-   
+    margin-bottom: 1rem;
 }
 
 .about-item span {
     font-weight: 500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    display: block;
+    margin-bottom: 1rem;
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-content h2 {
+        font-size: 6rem;
+    }
+
+    .hero-content p {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .about h2 {
+        font-size: 6rem;
+    }
+
+    .about p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-content h2 {
+        font-size: 8rem;
+    }
+
+    .hero-content p {
+        font-size: 3rem;
+    }
+
+    .about h2 {
+        font-size: 8rem;
+    }
+
+    .about p {
+        font-size: 3rem;
+    }
+}

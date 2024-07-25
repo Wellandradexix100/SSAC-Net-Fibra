@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSAC Net-- Provedor de internet</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <!--NAVBAR-->
     <header class="top-bar">
         <div class="container">
             <div class="brand">
+                <!--<img src="seu_logo_aqui.png" alt="Logo" class="logo">-->
                 <h1><a href="index.html">SSAC NET</a></h1>
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
             </div>
             <nav class="navigation">
                 <ul>
@@ -29,6 +24,10 @@
                     <li><a href="#">CONTATO</a></li>
                 </ul>
             </nav>
+            <div class="contact-info">
+                <span><i class="fa fa-whatsapp"></i> (81) 4102-9031</span>
+            </div>
+            <a href="#" class="btn-central">CENTRAL</a>
         </div>
     </header>
 
@@ -62,27 +61,31 @@
                     <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXSbL-xF6GUEIvBkI4J0R7CE2yjo4xSAyh2qvNl05-82r9vaEqA4w=s40-c-rp-mo-br100" alt=""><br><span>Fatima Paula</span><br><br>Melhor experiência em internet! Referência em atendimento e soluções ao cliente! Estou muito satisfeita e super recomendo!</div>
                     <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUbuTVEQfIjP8RaOBzf_jp22eZujocgmtJRjZzqjGc1kfJObUedUw=s40-c-rp-mo-br100" alt=""><br><span>Lilian Menezes</span><br><br>Nunca fico sem net, a atenção deles com o cliente é nota 10.</div>
                 </div>
-                <!-- Adiciona os botões de navegação do Swiper -->
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <!-- Adiciona os paginadores do Swiper -->
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             breakpoints: {
                 640: {
@@ -97,7 +100,7 @@
                     slidesPerView: 4,
                     spaceBetween: 50,
                 },
-            },
+            }
         });
     </script>
 </body>
