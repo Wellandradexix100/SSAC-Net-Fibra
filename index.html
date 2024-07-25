@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAC Net-- Provedor de internet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header class="top-bar">
+        <div class="container">
+            <div class="brand">
+                <h1><a href="index.html">SSAC NET</a></h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobre">ÁREA DO CLIENTE</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="#">PLANOS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--pagina inicial-->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-content-bg">
+                    <h2>Conecte-se ao <span>Futuro</span></h2>
+                    <p>Navegue, Trabalhe, e Divirta-se com a Internet Mais Rápida e Confiável da sua região!</p>
+                    <a href="#" class="btn">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/banner-right-image.png" alt="Um homem e uma mulher segurando dois smartphones e felizes">
+            </div>
+        </div>
+    </section>
+
+    <!--Testemunhas-->
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na SSAC NET, estamos comprometidos em fornecer a melhor experiência de internet para nossos clientes. Nossa missão é garantir um serviço de alta qualidade com uma equipe dedicada ao seu atendimento.</p>
+            
+            <div class="swiper-container about-grid">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUWdyd_PCkQGXO4iYyCWQJeuTnn684CULS9TCN7N9Va80pXml1_=w60-h60-p-rp-mo-ba3-br100" alt=""><br><span>Stella Barbosa</span><br><br>Sou cliente da SSACNET a mais de 10 anos, e compartilhei pra muitas pessoas e somos gratos. Obrigada SSACNETFIBRA</div>
+                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a/ACg8ocK7ihAcGYerlWx3xF6XAwl2DTQLmNh63CE4IP5oezkISUSxQA=s40-c-rp-mo-br100" alt=""><br><span>Fernanda de Moraes</span><br><br>Internet muito boa,sou cliente a mais de 5 anos,sempre temos assistência quando é preciso.uso e recomendo.Internet top</div>
+                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUATZJ3I81SLnj3iWjrpNYKhMfUhLr_Qw1MC51PiDt89AyUO56J=s40-c-rp-mo-br100" alt=""><br><span>Mikael Rabelo</span><br><br>Muito rápida!!! Melhor provedor de internet da região, e entrega realmente o que foi contratado.</div>
+                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXSbL-xF6GUEIvBkI4J0R7CE2yjo4xSAyh2qvNl05-82r9vaEqA4w=s40-c-rp-mo-br100" alt=""><br><span>Fatima Paula</span><br><br>Melhor experiência em internet! Referência em atendimento e soluções ao cliente! Estou muito satisfeita e super recomendo!</div>
+                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUbuTVEQfIjP8RaOBzf_jp22eZujocgmtJRjZzqjGc1kfJObUedUw=s40-c-rp-mo-br100" alt=""><br><span>Lilian Menezes</span><br><br>Nunca fico sem net, a atenção deles com o cliente é nota 10.</div>
+                </div>
+                <!-- Adiciona os botões de navegação do Swiper -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Adiciona os paginadores do Swiper -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
