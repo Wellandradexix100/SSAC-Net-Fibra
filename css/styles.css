@@ -201,20 +201,23 @@ body {
 
 .plan-box {
     background-color: #fff;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ajuste para permitir que 5 caixas se alinhem corretamente */
+    transition: transform 0.2s ease-in-out;
 
 }
+.plan-box:hover {
+    transform: scale(1.05); }/* Adiciona um efeito de zoom ao passar o mouse */
 
 .plan-box .plan-header h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-bottom: 0.5rem;
     color: #0de62a;
 }
 
 .plan-box .plan-header p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #000;
 }
@@ -226,12 +229,11 @@ body {
 }
 
 .plan-box .plan-price .currency {
-    font-size: 1.4rem;
-    vertical-align: super;
+    font-size: 1.8rem;
 }
 
 .plan-box .plan-price .period {
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: #000;
 }
 
@@ -255,7 +257,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .plan-box .btn-contratar:hover {
@@ -290,7 +292,7 @@ body {
 }
 
 .about p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     color: #000;
 }
@@ -305,13 +307,19 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    padding: 3rem;
+    font-size: 1.7rem;
 }
 
 .about-item img {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+.about-item p{
+    font-size: 1.8rem;
 }
 
 @media (max-width: 76.8rem) {
@@ -467,6 +475,10 @@ body {
 
 .footer .footer-info-item p {
     margin: 0.5rem 0;
+}
+
+.footer i{
+    color: #0de62a;
 }
 
 .footer .footer-links {
