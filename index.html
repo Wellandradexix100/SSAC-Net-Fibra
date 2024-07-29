@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSAC Net-- Provedor de internet</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <!--NAVBAR-->
+    
     <header class="top-bar">
         <div class="container">
             <div class="brand">
-                <!--<img src="seu_logo_aqui.png" alt="Logo" class="logo">-->
                 <h1><a href="index.html">SSAC NET</a></h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
             <nav class="navigation">
                 <ul>
                     <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobre">ÁREA DO CLIENTE</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#">PLANOS</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="https://fjtelecom.com.br" target="_blank">ÁREA DO CLIENTE</a></li>
+                    <li><a href="#planos">PLANOS</a></li>
+                    <li><a href="#sobre">SOBRE NÓS</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
                 </ul>
             </nav>
-            <div class="contact-info">
-                <span><i class="fa fa-whatsapp"></i> (81) 4102-9031</span>
-            </div>
-            <a href="#" class="btn-central">CENTRAL</a>
+            <script>
+                function toggleMenu() {
+                    var menu = document.querySelector('.top-bar .navigation ul');
+                    menu.classList.toggle('show');
+                }
+            </script>
         </div>
     </header>
 
@@ -47,6 +60,114 @@
         </div>
     </section>
 
+      <!--Planos-->
+    
+      <section class="plans" id="planos">
+        <div class="container">
+            <h2>Nossos Planos</h2>
+            <p>Escolha o plano ideal para você e sua família. Oferecemos diversas opções para atender às suas necessidades com a melhor qualidade e preço justo.</p>
+            <ul class="plan-list">
+                <li>
+                    <div class="plan-box">
+                        <div class="plan-header">
+                            <h3>200 MEGA</h3>
+                            <p>PLANO BASICO</p>
+                        </div>
+                        <div class="plan-price">
+                            <p><span class="currency">R$</span> 60,00 <span class="period">/mensal</span></p>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Fibra ótica</li>
+                            <li>Upload simétrico</li>
+                            <li>Suporte presencial</li>
+                            <li>Equipamento em comodato</li>
+                            <li>Wi-Fi 5g Incluso</li>
+                        </ul>
+                        <a href="#" class="btn btn-contratar">CONTRATAR</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan-box">
+                        <div class="plan-header">
+                            <h3>200 MEGA</h3>
+                            <p>FJ CONNECT</p>
+                        </div>
+                        <div class="plan-price">
+                            <p><span class="currency">R$</span> 74,90 <span class="period">/mensal</span></p>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Fibra ótica</li>
+                            <li>Upload simétrico</li>
+                            <li>Suporte presencial</li>
+                            <li>Equipamento em comodato</li>
+                            <li>Wi-Fi 5g Incluso</li>
+                        </ul>
+                        <a href="#" class="btn btn-contratar">CONTRATAR</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan-box">
+                        <div class="plan-header">
+                            <h3>200 MEGA</h3>
+                            <p>FJ CONNECT</p>
+                        </div>
+                        <div class="plan-price">
+                            <p><span class="currency">R$</span> 74,90 <span class="period">/mensal</span></p>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Fibra ótica</li>
+                            <li>Upload simétrico</li>
+                            <li>Suporte presencial</li>
+                            <li>Equipamento em comodato</li>
+                            <li>Wi-Fi 5g Incluso</li>
+                        </ul>
+                        <a href="#" class="btn btn-contratar">CONTRATAR</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan-box">
+                        <div class="plan-header">
+                            <h3>200 MEGA</h3>
+                            <p>FJ CONNECT</p>
+                        </div>
+                        <div class="plan-price">
+                            <p><span class="currency">R$</span> 74,90 <span class="period">/mensal</span></p>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Fibra ótica</li>
+                            <li>Upload simétrico</li>
+                            <li>Suporte presencial</li>
+                            <li>Equipamento em comodato</li>
+                            <li>Wi-Fi 5g Incluso</li>
+                        </ul>
+                        <a href="#" class="btn btn-contratar">CONTRATAR</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="plan-box">
+                        <div class="plan-header">
+                            <h3>200 MEGA</h3>
+                            <p>FJ CONNECT</p>
+                        </div>
+                        <div class="plan-price">
+                            <p><span class="currency">R$</span> 74,90 <span class="period">/mensal</span></p>
+                        </div>
+                        <ul class="plan-features">
+                            <li>Fibra ótica</li>
+                            <li>Upload simétrico</li>
+                            <li>Suporte presencial</li>
+                            <li>Equipamento em comodato</li>
+                            <li>Wi-Fi 5g Incluso</li>
+                        </ul>
+                        <a href="#" class="btn btn-contratar">CONTRATAR</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+
     <!--Testemunhas-->
     <section class="about" id="sobre">
         <div class="container">
@@ -58,27 +179,19 @@
                     <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUWdyd_PCkQGXO4iYyCWQJeuTnn684CULS9TCN7N9Va80pXml1_=w60-h60-p-rp-mo-ba3-br100" alt=""><br><span>Stella Barbosa</span><br><br>Sou cliente da SSACNET a mais de 10 anos, e compartilhei pra muitas pessoas e somos gratos. Obrigada SSACNETFIBRA</div>
                     <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a/ACg8ocK7ihAcGYerlWx3xF6XAwl2DTQLmNh63CE4IP5oezkISUSxQA=s40-c-rp-mo-br100" alt=""><br><span>Fernanda de Moraes</span><br><br>Internet muito boa,sou cliente a mais de 5 anos,sempre temos assistência quando é preciso.uso e recomendo.Internet top</div>
                     <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUATZJ3I81SLnj3iWjrpNYKhMfUhLr_Qw1MC51PiDt89AyUO56J=s40-c-rp-mo-br100" alt=""><br><span>Mikael Rabelo</span><br><br>Muito rápida!!! Melhor provedor de internet da região, e entrega realmente o que foi contratado.</div>
-                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXSbL-xF6GUEIvBkI4J0R7CE2yjo4xSAyh2qvNl05-82r9vaEqA4w=s40-c-rp-mo-br100" alt=""><br><span>Fatima Paula</span><br><br>Melhor experiência em internet! Referência em atendimento e soluções ao cliente! Estou muito satisfeita e super recomendo!</div>
-                    <div class="swiper-slide about-item"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUbuTVEQfIjP8RaOBzf_jp22eZujocgmtJRjZzqjGc1kfJObUedUw=s40-c-rp-mo-br100" alt=""><br><span>Lilian Menezes</span><br><br>Nunca fico sem net, a atenção deles com o cliente é nota 10.</div>
+                    <div class="swiper-slide about-item"><img src="https://forum.imasters.com.br/uploads/monthly_2017_09/F.png.d5ed89eea3a6f66783d25ce1a2a18119.png" alt=""><br><span>Felipe Leandro</span><br><br>Não existe melhor!! Atendimento de qualidade, estabilidade de conexão e alta performance são o diferencial da empresa</div>
                 </div>
-                <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
 
-    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            slidesPerView: 1, // Exibir apenas 1 slide por vez
+            spaceBetween: 2, // Espaço entre os slides
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -87,21 +200,89 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            }
         });
     </script>
+        <!-- Seção de Contato -->
+<section id="contato" class="contato-section">
+    <div class="container">
+        <h2>Fale conosco</h2>
+        <div class="contact-content">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.281839590043!2d-34.9411882!3d-8.0942974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f14236980d7%3A0x669935b1066da4b4!2sSSACNETFIBRA%20TELECOM!5e0!3m2!1spt-BR!2sbr!4v1722275545255!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+            <div class="form">
+                <h3>Contato</h3>
+                <form action="mailto:suportesonicfibra@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Nome e sobrenome" required>
+                    <input type="text" name="phone" placeholder="Seu número de telefone com DDD" required>
+                    <input type="email" name="email" placeholder="Seu email" required>
+                    <textarea name="message" placeholder="Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
+<!-- Seção de Links Úteis -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <i class="fas fa-map fa-3x"></i>
+            <div class="footer-info-item">
+                <p>Localização</p>
+                <p>Av. Central 6507, Bairro</p>
+            </div>
+            <i class="fas fa-phone fa-3x"></i>
+            <div class="footer-info-item">              
+                <p>Fale conosco</p>
+                <p>(81) 3129-3456 (Suporte Fixo)</p>
+                <p>(81) 9 3129-3456 (Suporte Remoto)</p>
+                <p>(81) 9 3129-3456 (WhatsApp)</p>
+            </div>
+            <i class="fas fa-envelope fa-3x"></i>
+            <div class="footer-info-item"> 
+                <p>Envie um email</p>
+                <p>suportesonicfibra@gmail.com</p>
+            </div>
+            <i class="fas fa-clock fa-3x"></i>
+            <div class="footer-info-item">
+                <p>Horário de funcionamento</p>
+                <p>08:00 - 19:00h</p>
+                <p>Suporte remoto 24h</p>
+            </div>
+        </div>
+    <div class="container">
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>SSACNET Fibra</h4>
+                    <p>Trabalhando sempre para entregar<br> o melhor em serviços de internet para sua casa.</p>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Links rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Links Casuais</h4>
+                    <ul>
+                        <li><a href="#politica">Política de Privacidade</a></li>
+                        <li><a href="#termos">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="ant-thief">
+    <p>Copyright © Desenvolvido por <span>Wellington Andrade</span></p>
+</div>
+        
+    </div>
+   
+</footer>
+
 </html>
