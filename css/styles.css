@@ -107,18 +107,38 @@ body {
 .hero {
     padding: 5rem 2rem;
     background-color: #ffffff;
+    background-image: url('/assets/background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Necessário para a sobreposição de cor */
+    z-index: 0; /* Certifique-se de que o background está atrás do conteúdo */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffc5; /* Ajuste a cor e opacidade conforme necessário */
+    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
 }
 
 .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Ajustado para exibir imagem e texto lado a lado no desktop */
     gap: 2rem;
+    position: relative;
+    z-index: 1; /* Certifique-se de que o conteúdo esteja acima do background */
 }
 
 .hero .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero .hero-content h2 {
@@ -156,6 +176,7 @@ body {
     width: 100%;
     height: auto;
 }
+
 /* Seção hero - dispositivos móveis */
 @media (max-width: 768px) {
     .hero .container {
@@ -167,9 +188,10 @@ body {
         padding: 1rem;
     }
 }
+
 /* Seção planos */
 .plans {
-    padding: 5rem 2rem;
+    padding: 20rem 2rem;
     background-color: #ffffff;
     text-align: center;
 }
@@ -196,7 +218,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .plan-box {
@@ -273,7 +295,7 @@ body {
 
 /* Seção Sobre */
 .about {
-    padding: 5rem 2rem;
+    padding: 20rem 2rem;
     background-color: #ffffff;
     text-align: center;
 }
@@ -307,8 +329,9 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    padding: 3rem;
+    padding: 10rem;
     font-size: 1.7rem;
+    
 }
 
 .about-item img {
@@ -336,9 +359,8 @@ body {
   /* Estilos para a seção de contato */
   .contato-section {
     background-color: #ffffff;
-    padding: 1rem 5rem;
-    margin-top: 20rem;
-    margin-bottom: 10rem;
+    padding: 10rem 5rem;
+   
 }
 
 .contato-section .container {
