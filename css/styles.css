@@ -107,11 +107,11 @@ body {
 .hero {
     padding: 5rem 2rem;
     background-color: #ffffff;
-    background-image: url('/assets/background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('../assets/background.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
-    position: relative; /* Necessário para a sobreposição de cor */
-    z-index: 0; /* Certifique-se de que o background está atrás do conteúdo */
+    position: relative; 
+    z-index: 0;
 }
 
 .hero::before {
