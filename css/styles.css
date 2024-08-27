@@ -1,5 +1,4 @@
 @import url('node_modules/@fortawesome/fontawesome-free/css/all.min.css');
-/* Reset básico e definições globais */
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +61,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    font-size: 1.6rem; /* Ajustado para melhor exibição */
+    font-size: 1.6rem;
 }
 
 .top-bar .navigation ul li {
@@ -107,7 +106,7 @@ body {
 .hero {
     padding: 5rem 2rem;
     background-color: #ffffff;
-    background-image: url('../assets/background.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('../assets/background.jpg');
     background-size: cover;
     background-position: center;
     position: relative; 
@@ -121,16 +120,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffffc5; /* Ajuste a cor e opacidade conforme necessário */
-    z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
+    background-color: #ffffffc5; 
+    z-index: -1; 
 }
 
 .hero .container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Ajustado para exibir imagem e texto lado a lado no desktop */
+    grid-template-columns: 1fr 1fr; 
     gap: 2rem;
     position: relative;
-    z-index: 1; /* Certifique-se de que o conteúdo esteja acima do background */
+    z-index: 1; 
 }
 
 .hero .hero-content {
@@ -164,7 +163,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.6rem;
-    display: inline-block; /* Ajustado para evitar largura total */
+    display: inline-block;
 }
 
 .hero .hero-content .btn:hover {
@@ -225,12 +224,12 @@ body {
     background-color: #fff;
     padding: 3rem;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ajuste para permitir que 5 caixas se alinhem corretamente */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s ease-in-out;
 
 }
 .plan-box:hover {
-    transform: scale(1.05); }/* Adiciona um efeito de zoom ao passar o mouse */
+    transform: scale(1.05); }
 
 .plan-box .plan-header h3 {
     font-size: 2.4rem;
@@ -321,7 +320,7 @@ body {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Ajustado para melhor exibição no desktop */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 2rem;
 }
 
@@ -448,51 +447,51 @@ body {
     }}
     @media (max-width: 768px) {
         .contact-content .map iframe {
-            width: 100%; /* Corrigido para ocupar toda a largura */
-            height: auto; /* Mantém a proporção da altura */
+            width: 100%; 
+            height: auto; 
         }
     }
     /* Estilos para o rodapé */
     /* Estilos para o rodapé */
 .footer {
     background-color: #ffffff;
-    padding: 5rem 2rem; /* Ajuste o padding para melhor responsividade */
+    padding: 5rem 2rem; 
 }
 
 .footer .container {
     display: flex;
-    flex-direction: column; /* Empilha as seções verticalmente */
-    align-items: inherit; /* Centraliza horizontalmente */
+    flex-direction: column; 
+    align-items: inherit; 
     text-align: justify;
 }
 
 .footer .footer-content {
     display: flex;
-    flex-direction: column; /* Organiza as seções verticalmente */
+    flex-direction: column; 
     width: 100%;
 }
 
 .footer .footer-info {
     display: flex;
-    flex-direction: row; /* Empilha verticalmente para dispositivos móveis */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: row; 
+    align-items: center;
     width: 100%;
-    margin-bottom: 2rem; /* Espaço entre a seção de informações e os links */
-    font-size: 1.5rem; /* Ajustado para melhor exibição em dispositivos móveis */
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer .footer-info-item {
-    margin-bottom: 1rem; /* Ajuste o espaçamento entre itens */
+    margin-bottom: 1rem; 
     color: #000000;
-    width: 100%; /* Garantir que os itens ocupem toda a largura disponível */
-    text-align: center; /* Centraliza o texto */
+    width: 100%; 
+    text-align: center; 
 }
 
 .footer .footer-info-item i {
     color: rgb(31, 255, 31);
     font-size: 2.4rem;
     margin-right: 1rem;
-    margin-top: 1rem; /* Espaço entre o ícone e o texto */
+    margin-top: 1rem; 
 }
 
 .footer .footer-info-item p {
@@ -502,28 +501,28 @@ body {
 .footer i.fa-map{
     background-image: linear-gradient(to bottom, #09ff00, #97f828, #a5fe00);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
 }
 footer i.fa-phone{
     background-image: linear-gradient(to bottom, #09ff00, #97f828, #a5fe00);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
 }
 footer i.fa-envelope{
     background-image: linear-gradient(to bottom, #09ff00, #97f828, #a5fe00);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
 }
 footer i.fa-clock{
     background-image: linear-gradient(to bottom, #09ff00, #97f828, #a5fe00);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
 }
@@ -534,17 +533,17 @@ footer i.fa-clock{
 .footer .footer-links {
     margin-top: 2rem;
     display: flex;
-    flex-direction: row; /* Empilha verticalmente para dispositivos móveis */
-    align-items: center; /* Centraliza horizontalmente */
-    width: 100%; /* Garante que a largura ocupe toda a área disponível */
-    font-size: 1.5rem; /* Ajustado para melhor exibição em dispositivos móveis */
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%; 
+    font-size: 1.5rem; 
 }
 
 .footer .footer-links-column {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ajuste conforme necessário */
-    margin-bottom: 2rem; /* Espaço entre colunas */
+    width: 100%; 
+    margin-bottom: 2rem;
 }
 
 .footer .footer-links-column h4 {
@@ -578,7 +577,7 @@ footer i.fa-clock{
 .footer .ant-thief span{
     background-image: linear-gradient(to right, #ffd000, #f8a528, #fe3300);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
     font-size: 1.6rem;
@@ -588,18 +587,18 @@ footer i.fa-clock{
     /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .footer .footer-info {
-        flex-direction: column; /* Empilha verticalmente */
-        align-items: center; /* Centraliza horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer .footer-info-item {
-        width: auto; /* Ajusta a largura dos itens */
-        text-align: center; /* Centraliza o texto */
+        width: auto; 
+        text-align: center; 
     }
 
     .footer .footer-links {
-        flex-direction: column; /* Empilha verticalmente para dispositivos móveis */
-        align-items: center; /* Centraliza horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer .footer-links-column {
@@ -615,7 +614,7 @@ footer i.fa-clock{
 .social-icons i.fa-instagram{
     background-image: linear-gradient(to bottom, #293FDC, #FB2F98, #FE9200);
     background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     color: black;
     
@@ -629,17 +628,17 @@ footer i.fa-clock{
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Espaçamento entre os ícones */
+    gap: 2rem; 
 }
 
 .social-icons a {
-    color: #000; /* Cor padrão dos ícones */
-    font-size: 2.4rem; /* Tamanho dos ícones */
+    color: #000; 
+    font-size: 2.4rem; 
     transition: color 0.2s ease-in-out;
 }
 
 .social-icons a:hover {
-    color: #0de62a; /* Cor ao passar o mouse */
+    color: #0de62a; 
 }
 
  /*font poppins*/
